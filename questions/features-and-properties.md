@@ -34,14 +34,14 @@ var features = [ 'nodejs', 'gitignore', 'license', 'babel' ];
 
 ## Properties
 
-The `properties` from text prompts are only useful for `@echo` and `@eval` in [preprocess content](../preprocess-content).
+The `properties` from text prompts are only useful for `@echo` and `@eval` in [preprocess file content](../preprocess-file-content).
 
 ```js
 /* @echo name */
 var desc = /* @eval JSON.stringify(description) */;
 ```
 
-Be careful, `@echo` does not automatically escape the string in any situation, we can use `@eval` to help escaping. We will explain more in [preprocess content](../preprocess-content).
+Be careful, `@echo` does not automatically escape the string in any situation, we can use `@eval` to help escaping. We will explain more in [preprocess file content](../preprocess-file-content).
 
 ## Features
 

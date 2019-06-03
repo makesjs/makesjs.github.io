@@ -35,7 +35,7 @@ Then somehow changes file name from `index.ext` to `index.js` or `index.ts` base
 
 ## "makes" file objects stream
 
-We briefly showed you file objects stream in [feature folders](feature-folders#file-objects-stream). Here is the [more complete version of the stream](https://github.com/makesjs/makes/blob/master/lib/write-project/index.js). Roughly like following gulp stream:
+We briefly showed you file objects stream in [feature folders](feature-folders#file-objects-stream). Here is the more complete version of [the stream](https://github.com/makesjs/makes/blob/master/lib/write-project/index.js). Roughly like following gulp stream:
 
 ```js
 gulp.src(['skeleton/common/**/*', 'skeleton/nodejs/**/*', 'skeleton/babel/**/*'])

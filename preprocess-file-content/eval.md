@@ -19,7 +19,7 @@ parent: Preprocess File Content
 
 What if `description` contains some character like `"` which needs to escaped? `@echo` is not flexible to deal with such situation.
 
-You can eval a JavaScript expression involving one or more properties from the [`properties`](questions/features-and-properties#properties) hash object.
+You can eval a JavaScript expression involving one or more properties from the [`properties`](../questions/features-and-properties#properties) hash object.
 
 For properties
 ```js

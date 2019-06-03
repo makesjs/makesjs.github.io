@@ -9,7 +9,7 @@ parent: Preprocess File Content
 
 # @echo
 
-You can echo any property from the [`properties`](questions/features-and-properties#properties).
+You can echo any property from the [`properties`](../questions/features-and-properties#properties).
 
 For properties
 ```js

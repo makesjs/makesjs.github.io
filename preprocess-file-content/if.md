@@ -9,7 +9,7 @@ parent: Preprocess File Content
 
 # @if
 
-You can use `@if` with [condition expression](questions/conditional#condition-expression) using the [`features`](questions/features-and-properties#features) array.
+You can use `@if` with [condition expression](../questions/conditional#condition-expression) using the [`features`](../questions/features-and-properties#features) array.
 
 You have to pair every `@if` with one `@endif`. `@if` can be nested (there are plenty examples of nested if in our examples skeleton repos).
 
