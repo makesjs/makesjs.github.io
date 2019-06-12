@@ -138,6 +138,7 @@ Every function:
   * `properties`, `features` are the result built from questions.
   * `targetDir` gives you a chance to inspect target folder, obviously only useful when end users ran "makes" in [here mode](here-mode-and-write-policy).
   * `unattended` is true when end users ran "makes" in [silient mode](silent-mode). Your transform implementation should skip any user interactivity when `unattended` is true.
+  * `prompts` is the exposed "makes" inner prompts implementation. You can call `prompts.text(opts)` and `prompts.select(opts)` to ask user questions, more details in [prompts api doc](prompts-api).
 * return a Node.js transform stream. Here we use `through2` to generate a transform stream, just like what you would see in any gulp tutorial.
 
 ## Runtime dependencies

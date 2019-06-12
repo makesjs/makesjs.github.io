@@ -94,7 +94,7 @@ You define a function in `after.js`.
   * `features` is the selected features array from select prompts.
   * `notDefaultFeatures` is a sub-set of `features` array, only contains non-default choices. You can use this array to construct a clear silent mode command, as the above example showed.
   * `properties` is the `properties` hash object from text prompts.
-  * `prompts` is the exposed "makes" inner prompts implementation. You can call `prompts.text(opts)` and `prompts.select(opts)` to ask user questions.
+  * `prompts` is the exposed "makes" inner prompts implementation. You can call `prompts.text(opts)` and `prompts.select(opts)` to ask user questions, more details in [prompts api doc](prompts-api).
   * `ansiColors` is the exposed ["ansi-colors" npm package](https://www.npmjs.com/package/ansi-colors). This is provided for skeleton to avoid some runtime dependencies.
   * `sisteransi` is the exposed ["sisteransi" npm package](https://www.npmjs.com/package/sisteransi). This is provided for skeleton to avoid some runtime dependencies.
   * `run(cmd, args)` is a convenient function to run command. It runs the command with optional arguments in final project folder. The above example shows `run('npm', ['install'])`.
@@ -118,7 +118,7 @@ You define a function in `before.js`.
   * `here` is true when in here mode.
   * `preselectedFeatures` is the pre-selected features array from optional command line switch `-s x,y,z`, default to an empty array.
   * `predefinedProperties` is the pre-defined properties hash object gathered from command line, default to an empty object.
-  * `prompts` is the exposed "makes" inner prompts implementation. You can call `prompts.text(opts)` and `prompts.select(opts)` to ask user questions.
+  * `prompts` is the exposed "makes" inner prompts implementation. You can call `prompts.text(opts)` and `prompts.select(opts)` to ask user questions, more details in [prompts api doc](prompts-api).
   * `ansiColors` is the exposed ["ansi-colors" npm package](https://www.npmjs.com/package/ansi-colors). This is provided for skeleton to avoid some runtime dependencies.
   * `sisteransi` is the exposed ["sisteransi" npm package](https://www.npmjs.com/package/sisteransi). This is provided for skeleton to avoid some runtime dependencies.
 2. "before" task can be async (returns a promise). The result value is optional, but when you return a value object, it can have following optional fields:
