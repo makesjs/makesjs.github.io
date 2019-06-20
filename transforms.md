@@ -68,9 +68,9 @@ common/a-file
 nodejs/a-file
 ```
 
-"makes" default behaviour is to honour the last one `nodejs/a-file`, so the order of `features` array is actually significant. You can deliberately offer a new file in some feature folder which overshadow previous feature folders (according to the order of `features` array, which is the order of skeleton questions and choices).
+"makes" default behaviour is to honour the last one `nodejs/a-file`, so the order of `features` array is actually significant. You can deliberately offer a new file in some feature folder which overshadows previous feature folders (according to the order of `features` array, which is the order of skeleton questions and choices).
 
-However, for convenience, "makes" offering special behaviour on two types of files.
+However, for convenience, "makes" offers special behaviour on two types of files.
 
 ### 1. Concatenate readme files
 
