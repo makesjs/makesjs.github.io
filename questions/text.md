@@ -120,4 +120,4 @@ const defaultNamePrompt = {
 
 Skeleton author can explicitly add a text prompt for `name: "name"` to the questions list. In this case, "makes" would not prepend the default question for project name.
 
-Your text prompt for `name: "name"` inherits the default question for project name, you can overwrite `message`, `default`, and even use a different `validate`. The question for `name: "name"` does not have to be the first question in the list, but we recommend you to ask it first.
+Your text prompt for `name: "name"` inherits the default question for project name, you can overwrite `message`, `default`, and even use a different `validate`. The question for `name: "name"` does not have to be the first question in the list, but it will be promoted to be the first question at runtime when your `questions.js` didn't say so.
