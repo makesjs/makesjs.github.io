@@ -104,9 +104,9 @@ You define a function in `after.js`.
 
 The optional "before" task happens right before prompting questions, it can:
 
-1. turn on/off silent mode (aka unattended).
-2. alter preselectedFeatures.
-3. alter predefinedProperties.
+1. silence the questions defined in `questions.js`. For example, "before" task can let user to choose a preset to skip detailed questionnaire.
+2. override preselectedFeatures.
+3. override predefinedProperties.
 4. or maybe just print out some greetings.
 
 "before" task should also respect existing silent mode (aka unattended).
@@ -126,10 +126,14 @@ You define a function in `before.js`.
   * `preselectedFeatures`, you can replace `preselectedFeatures` array.
   * `predefinedProperties`, you can replace `predefinedProperties` hash object.
 
-When you overwrite `unattended`, `preselectedFeatures`, or `predefinedProperties`, it alters the behaviour of question prompts.
+The return value of "before" task is an optional object with three optional properties.
+
+1. `silentQuestions`, if set to `true`, the questions defined in `questions.js` will be silenced.
+2. `preselectedFeatures`, overrides existing `preselectedFeatures`.
+3. `predefinedProperties`, overrides existing `predefinedProperties`.
 
 For example, aurelia/new skeleton use "before" task to ask user to:
-1. pick a preset (turn on silent mode, plus preset `preselectedFeatures`).
-2. or use custom mode (overwrite nothing, run through questions interactively).
+1. pick a preset (silence questionnaire, plus override `preselectedFeatures`).
+2. or use custom mode (does nothing, run through questions interactively).
 
 TODO: add example from future aurelia skeleton how to use "before" task
