@@ -97,7 +97,7 @@ You define a function in `after.js`.
   * `prompts` is the exposed "makes" inner prompts implementation. You can call `prompts.text(opts)` and `prompts.select(opts)` to ask user questions, more details in [prompts api doc](prompts-api).
   * `ansiColors` is the exposed ["ansi-colors" npm package](https://www.npmjs.com/package/ansi-colors). This is provided for skeleton to avoid some runtime dependencies.
   * `sisteransi` is the exposed ["sisteransi" npm package](https://www.npmjs.com/package/sisteransi). This is provided for skeleton to avoid some runtime dependencies.
-  * `run(cmd, args)` is a convenient function to run command. It runs the command with optional arguments in final project folder. The above example shows `run('npm', ['install'])`.
+  * `run(cmd, args)` is a convenient function to run command. It runs the command with optional arguments in the final project folder. The above example shows `run('npm', ['install'])`.
 2. the result value is ignored. But "after" task can be async (returns a promise).
 
 ## "before" task
@@ -122,18 +122,52 @@ You define a function in `before.js`.
   * `ansiColors` is the exposed ["ansi-colors" npm package](https://www.npmjs.com/package/ansi-colors). This is provided for skeleton to avoid some runtime dependencies.
   * `sisteransi` is the exposed ["sisteransi" npm package](https://www.npmjs.com/package/sisteransi). This is provided for skeleton to avoid some runtime dependencies.
 2. "before" task can be async (returns a promise). The result value is optional, but when you return a value object, it can have following optional fields:
-  * `unattended`, you can return `{unattended: true}` to turn on silent mode, or `{unattended: false}` to turn off silent mode.
-  * `preselectedFeatures`, you can replace `preselectedFeatures` array.
-  * `predefinedProperties`, you can replace `predefinedProperties` hash object.
-
-The return value of "before" task is an optional object with three optional properties.
-
-1. `silentQuestions`, if set to `true`, the questions defined in `questions.js` will be silenced.
-2. `preselectedFeatures`, overrides existing `preselectedFeatures`.
-3. `predefinedProperties`, overrides existing `predefinedProperties`.
+  * `silentQuestions`, if set to `true`, the questions defined in `questions.js` will be silenced.
+  * `preselectedFeatures`, overrides existing `preselectedFeatures`.
+  * `predefinedProperties`, overrides existing `predefinedProperties`.
 
 For example, aurelia/new skeleton use "before" task to ask user to:
 1. pick a preset (silence questionnaire, plus override `preselectedFeatures`).
 2. or use custom mode (does nothing, run through questions interactively).
 
-TODO: add example from future aurelia skeleton how to use "before" task
+The [`aurelia/new` `before.js`](https://github.com/aurelia/new/blob/master/before.js) is a great example. It asks user to pick a preset, if user picked one, it will skip following questionnaire and overwrite preselectedFeatures.
+
+```js
+const PRESETS = {
+  'default-esnext': ['webpack', 'babel'],
+  'default-typescript': ['webpack', 'typescript'],
+};
+
+module.exports = async function({unattended, prompts}) {
+  // don't ask when running in silent mode.
+  if (unattended) return;
+
+  const preset = await prompts.select({
+    message: 'Would you like to use the default setup or customize your choices?',
+    choices: [
+      {
+        value: 'default-esnext',
+        title: 'Default ESNext Aurelia 2 App',
+        hint: 'A basic Aurelia 2 App with Babel and Webpack'
+      }, {
+        value: 'default-typescript',
+        title: 'Default TypeScript Aurelia 2 App',
+        hint: 'A basic Aurelia 2 App with TypeScript and Webpack'
+      }, {
+        title: 'Custom Aurelia 2 App',
+        hint: 'Select bundler, transpiler, and more.'
+      }
+    ]
+  });
+
+  if (preset) {
+    const preselectedFeatures = PRESETS[preset];
+    if (preselectedFeatures) {
+      return {
+        silentQuestions: true, // skip following questionnaire
+        preselectedFeatures
+      };
+    }
+  }
+};
+```
