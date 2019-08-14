@@ -1,8 +1,7 @@
 ---
 layout: default
-title: '"before" and "after" tasks'
+title: before and after tasks
 nav_order: 11
-description: Learn how to add "before" and "after" tasks
 permalink: /before-and-after-tasks
 ---
 

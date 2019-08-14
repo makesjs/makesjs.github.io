@@ -2,7 +2,6 @@
 layout: default
 title: Tips
 nav_order: 4
-description: Understand more on how preprocess works
 permalink: /preprocess-file-content/tips
 parent: Preprocess File Content
 ---

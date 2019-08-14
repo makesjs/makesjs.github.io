@@ -2,7 +2,6 @@
 layout: default
 title: Feature Folders
 nav_order: 5
-description: Learn how to define feature folders
 permalink: /feature-folders
 ---
 

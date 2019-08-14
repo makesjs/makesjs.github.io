@@ -2,7 +2,6 @@
 layout: default
 title: Here Mode and Write Policy
 nav_order: 8
-description: Learn how to use here mode and write policy
 permalink: /here-mode-and-write-policy
 ---
 

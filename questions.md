@@ -2,7 +2,6 @@
 layout: default
 title: Questions
 nav_order: 4
-description: Learn how to define questions
 permalink: /questions
 has_children: true
 ---

@@ -2,7 +2,6 @@
 layout: default
 title: Get Started
 nav_order: 2
-description: Learn how to run "makes" command
 permalink: /get-started
 ---
 

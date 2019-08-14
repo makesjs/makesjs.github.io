@@ -2,7 +2,6 @@
 layout: default
 title: Transforms
 nav_order: 9
-description: Learn how to tape into file objects stream transforms
 permalink: /transforms
 ---
 

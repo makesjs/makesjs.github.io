@@ -2,7 +2,6 @@
 layout: default
 title: Conditional Question and Choice
 nav_order: 6
-description: Learn how to conditionally run a question or choice
 permalink: /questions/conditional
 parent: Questions
 ---

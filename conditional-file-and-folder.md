@@ -2,7 +2,6 @@
 layout: default
 title: Conditional File and Folder
 nav_order: 6
-description: Learn how to conditionally include file and folder
 permalink: /conditional-file-and-folder
 ---
 

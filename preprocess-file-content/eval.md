@@ -2,7 +2,6 @@
 layout: default
 title: '@eval'
 nav_order: 3
-description: 'Learn how to use @eval'
 permalink: /preprocess-file-content/eval
 parent: Preprocess File Content
 ---

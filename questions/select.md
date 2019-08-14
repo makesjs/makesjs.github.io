@@ -2,7 +2,6 @@
 layout: default
 title: Select Prompt
 nav_order: 2
-description: Learn how to define select prompt
 permalink: /questions/select
 parent: Questions
 ---

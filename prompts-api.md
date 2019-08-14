@@ -2,7 +2,6 @@
 layout: default
 title: Prompts API doc
 nav_order: 12
-description: Learn how to use the inner prompts API
 permalink: /prompts-api
 ---
 

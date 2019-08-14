@@ -2,7 +2,6 @@
 layout: default
 title: Home
 nav_order: 1
-description: "\"makes\" is a tool to scaffold new projects, simple enough that you would want to define your own skeletons (aka generators)."
 permalink: /
 ---
 

@@ -2,7 +2,6 @@
 layout: default
 title: Multi-select Prompt
 nav_order: 3
-description: Learn how to define multi-select prompt
 permalink: /questions/multi-select
 parent: Questions
 ---

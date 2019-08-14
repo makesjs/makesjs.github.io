@@ -2,7 +2,6 @@
 layout: default
 title: Features and Properties
 nav_order: 5
-description: Learn how "makes" makes use of the answers from questions
 permalink: /questions/features-and-properties
 parent: Questions
 ---

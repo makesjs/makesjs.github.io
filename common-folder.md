@@ -2,7 +2,6 @@
 layout: default
 title: Common Folder
 nav_order: 3
-description: Learn how to define common files for any feature choices
 permalink: /common-folder
 ---
 

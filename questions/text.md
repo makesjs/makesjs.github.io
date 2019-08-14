@@ -2,7 +2,6 @@
 layout: default
 title: Text Prompt
 nav_order: 1
-description: Learn how to define text prompt
 permalink: /questions/text
 parent: Questions
 ---
