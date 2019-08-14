@@ -21,7 +21,8 @@ What if `description` contains some character like `"` which needs to escaped? `
 
 You can eval a JavaScript expression involving one or more properties from the [`properties`](../questions/features-and-properties#properties) hash object.
 
-For properties
+All following examples are evaluated against these properties:
+
 ```js
 var properties = {
   name: 'my-app',

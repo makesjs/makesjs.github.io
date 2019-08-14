@@ -17,7 +17,7 @@ The preprocess in "makes" only supports three directives:
 2. `@if`
 3. `@eval` (not in original [preprocess](https://github.com/jsoverson/preprocess))
 
-We retained the two types syntax from original preprocess:
+We retained the two types of syntax from original preprocess:
 1. HTML syntax, for any file with extension `.html`, `.htm`, `.xml`, or `.svg`.
 2. JavaScript syntax, for any other text file.
 
