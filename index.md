@@ -31,6 +31,10 @@ npx makes <skeleton_provider>
 
 Skeletons for upcoming [Aurelia 2](https://docs.aurelia.io). Currently in early-alpha stage.
 
+```bash
+npx makes aurelia
+```
+
 ### [`dumberjs/new`](https://github.com/dumberjs/new)
 
 Try `dumberjs` skeleton to create various types of front-end projects. [`dumberjs`](https://github.com/dumberjs/dumber) is a JavaScript bundler using AMD module format for front-end SPA apps.
