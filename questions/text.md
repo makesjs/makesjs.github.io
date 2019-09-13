@@ -66,7 +66,7 @@ The return value should be
 1. for valid value, return `undefined` or `null` or `true` (boolean) or `""` (empty string) .
 2. for invalid value, return a non-empty string (error message) or `false` (boolean).
 
-When it return `false`, the default error message is `"Please Enter A Valid Value"`.
+When it returns `false`, the default error message is `"Please Enter A Valid Value"`.
 
 ```js
 module.exports = [
@@ -119,4 +119,4 @@ const defaultNamePrompt = {
 
 Skeleton author can explicitly add a text prompt for `name: "name"` to the questions list. In this case, "makes" would not prepend the default question for project name.
 
-Your text prompt for `name: "name"` inherits the default question for project name, you can overwrite `message`, `default`, and even use a different `validate`. The question for `name: "name"` does not have to be the first question in the list, but it will be promoted to be the first question at runtime when your `questions.js` didn't say so.
+Your text prompt for `name: "name"` inherits the default question for project name, you can overwrite `message`, `default`, and even use a different `validate`. The question for `name: "name"` does not have to be the first question in the list, but it will be asked as the first question at runtime even when your `questions.js` didn't list it at top.
