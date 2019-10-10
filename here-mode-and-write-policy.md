@@ -26,16 +26,16 @@ npx makes --here <skeleton_provider> <optional_project_name>
 
 ## Write policy when file exists
 
-There is an obvious complication when creating project in existing folder: what do you want to do when a new file conflicting an existing file. This is where write policy came in, to fine control the behaviour when there is some existing file.
+There is an obvious complication when creating project in existing folder: what do you want to do when a new file conflicts an existing file. This is where write policy came in, to fine control the behaviour when there is conflict.
 
-Simple as conditional file, you can mark a file with write policy with additional suffix on its file name. Note this is only required for skeleton to make use of here mode.
+Simple as conditional file, you can mark a file with write policy with additional suffix. Note this is only required for skeleton to make use of here mode.
 
 Append one of three write policies to a file name:
 * `__skip-if-exists` will skip the new file, the existing file is untouched.
 * `__append-if-exists` will append the content of new file to existing file.
 * `__ask-if-exists` will prompt end user for keep or replace the existing file. Note for convenience, when end use selected "keep the existing file", a new file will still be created but with additional suffix `__makes` (e.g. `new-file-name__makes`).
 
-For file without any write policy suffix, the default behaviour is overwriting existing file, which is expected but dangerous. Make sure you add write policy suffix to important files.
+For other files without any write policy suffix, the default behaviour is overwriting existing file, which is expected but dangerous. Make sure you add write policy suffix to important files.
 
 ## The order of write policy and condition
 
