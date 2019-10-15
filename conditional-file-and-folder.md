@@ -97,4 +97,24 @@ Skeleton [`dumberjs/new`](https://github.com/dumberjs/new) has many usage on con
 
 One interesting fact is the `src/` and `src__if_not_sfc/` were merged together in final project, so are the `test/` and `test__if_xxx/` folders.
 
-This feature makes "makes" skeleton easy to write and intuitive to read.
+### Pure conditional folder
+
+You can use a pure conditional folder to group multiple files and folders, in order to avoid appending same condition to all of them. For example:
+
+```
+─ vue/
+  ├── __if_sfc/
+  │   ├── _index.html
+  │   ├── package.json
+  │   └── src/
+  │       ├── App.vue
+  │       └── index.ext
+  └── __if_not_sfc/
+      ├── _index.html
+      ├── package.json
+      └── src/
+          ├── App.ext
+          └── index.ext
+```
+
+The pure condition `__if_sfc/` and `__if_not_sfc/` would not generate any extra folder structure. The generated files will have `_index.html`, `package.json` and `src/` in final project root folder.
