@@ -82,4 +82,5 @@ npx makes ../../local/folder
 7. [Transforms](transforms)
 8. [Silent Mode](silent-mode)
 9. ["before" and "after" tasks](before-and-after-tasks)
+10. [Banner](banner)
 
