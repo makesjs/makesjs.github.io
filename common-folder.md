@@ -21,6 +21,7 @@ This demo skeleton only provided a single useful file:
 ─ common/
   └── REAME.md
 ```
+{: .lh-tight}
 
 With content:
 ```md
