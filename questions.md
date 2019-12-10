@@ -34,6 +34,7 @@ This demo skeleton defined an optional file [`questions.js`](https://github.com/
 ─ ruby/
   └── main.rb
 ```
+{: .lh-tight}
 
 The optional `questions.js` file needs to provide an array of questions. For simplicity, "makes" doesn't support ESM module format, nor Babel/TypeScript transpiling. It must be written in pain CommonJS format which Node.js can understand.
 

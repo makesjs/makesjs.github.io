@@ -21,6 +21,7 @@ For example in [`makesjs/demo2`](https://github.com/makesjs/demo2), there is one
       ├── index.js__if_babel
       └── index.ts__if_typescript
 ```
+{: .lh-tight}
 
 If you check the content of the two files, they are identical. It's kind of waste to have two files. What about to define just one file:
 
@@ -29,6 +30,7 @@ If you check the content of the two files, they are identical. It's kind of wast
   └── src/
       └── index.ext
 ```
+{: .lh-tight}
 
 Then somehow changes file name from `index.ext` to `index.js` or `index.ts` based on `features` array? Well, "makes" didn't provide any direct way of doing this, but you can tape into "makes" file objects stream to easily support this feature with just few lines of code.
 

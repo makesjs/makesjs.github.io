@@ -23,6 +23,7 @@ If you read all the doc above this page, you have seen them enough. You probably
       ├── index.js__if_babel
       └── index.ts__if_typescript
 ```
+{: .lh-tight}
 
 ## Conditional file
 
@@ -56,6 +57,7 @@ You can do exactly same thing on a folder, for example, you can re-structure the
   └── src__if_typescript/
       └── index.ts
 ```
+{: .lh-tight}
 
 You can combine conditional folder together with conditional file.
 
@@ -65,6 +67,7 @@ You can combine conditional folder together with conditional file.
       └── unit__if_jest_or_jasmine/
           └── app.spec.js__if_babel
 ```
+{: .lh-tight}
 
 It will yield file `test/unit/app.spec.js` when condition `unit-test && (jest || jasmine) && babel` was met.
 
@@ -94,6 +97,7 @@ Skeleton [`dumberjs/new`](https://github.com/dumberjs/new) has many usage on con
   └── test__if_tape/
       └── App.spec.ext
 ```
+{: .lh-tight}
 
 One interesting fact is the `src/` and `src__if_not_sfc/` were merged together in final project, so are the `test/` and `test__if_xxx/` folders.
 
@@ -116,5 +120,6 @@ You can use a pure conditional folder to group multiple files and folders, in or
           ├── App.ext
           └── index.ext
 ```
+{: .lh-tight}
 
 The pure condition `__if_sfc/` and `__if_not_sfc/` would not generate any extra folder structure. The generated files will have `_index.html`, `package.json` and `src/` in final project root folder.

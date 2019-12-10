@@ -27,6 +27,7 @@ Let's have a look of [`makesjs/demo2`](https://github.com/makesjs/demo2) folder 
 ─ ruby/
   └── main.rb
 ```
+{: .lh-tight}
 
 The `common/` folder is always in play no matter what `features` end users selected, and it's always the first folder processed.
 
