@@ -43,7 +43,7 @@ Try `dumberjs` skeleton to create various types of front-end projects. [`dumberj
 npx makes dumberjs
 ```
 
-Note `npx makes dumberjs` is a conventional short-cut of `npx makes dumberjs/new`.
+> `npx makes dumberjs` is a conventional short-cut of `npx makes dumberjs/new`.
 
 ### [`makesjs/demo1`](https://github.com/makesjs/demo1)
 

@@ -122,4 +122,4 @@ You can use a pure conditional folder to group multiple files and folders, in or
 ```
 {: .lh-tight}
 
-The pure condition `__if_sfc/` and `__if_not_sfc/` would not generate any extra folder structure. The generated files will have `_index.html`, `package.json` and `src/` in final project root folder.
+> The pure condition `__if_sfc/` and `__if_not_sfc/` would not generate any extra folder structure. The generated files will have `_index.html`, `package.json` and `src/` in final project root folder.

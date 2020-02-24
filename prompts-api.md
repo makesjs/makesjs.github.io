@@ -30,7 +30,7 @@ prompts.text({message: 'Can you provide some text?'}).then(
 );
 ```
 
-Note unlike the text prompt options in [questions](questions/text), you don't need `name` in the options. This API `prompts.text()` directly returns user input without the need to wrap it into an object `{'field-name': 'user input'}`.
+> Unlike the text prompt options in [questions](questions/text), you don't need `name` in the options. This API `prompts.text()` directly returns user input without the need to wrap it into an object `{'field-name': 'user input'}`.
 
 You can supply additional options `default`, `validate` you saw in [questions](questions/text).
 

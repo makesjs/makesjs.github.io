@@ -35,7 +35,7 @@ Append one of three write policies to a file name:
 * `__append-if-exists` will append the content of new file to existing file.
 * `__ask-if-exists` will prompt end user for keep or replace the existing file. Note for convenience, when end use selected "keep the existing file", a new file will still be created but with additional suffix `__makes` (e.g. `new-file-name__makes`).
 
-For other files without any write policy suffix, the default behaviour is overwriting existing file, which is expected but dangerous. Make sure you add write policy suffix to important files.
+> For other files without any write policy suffix, the default behaviour is overwriting existing file, which is expected but dangerous. Make sure you add write policy suffix to important files.
 
 ## The order of write policy and condition
 

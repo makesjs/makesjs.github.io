@@ -81,7 +81,7 @@ There is nothing wrong, the silent mode will get default "postcss" in `features`
 }
 ```
 
-Note you don't need to use "no-postcss" anywhere in your skeleton, but it enables silent mode to turn off "postcss": `npx makes <skeleton> my-project-name -s no-postcss`.
+> You don't need to use "no-postcss" anywhere in your skeleton, but it enables silent mode to turn off "postcss": `npx makes <skeleton> my-project-name -s no-postcss`.
 
 The simple rule is:
 1. use empty value on first choice, as much as possible. This is the easiest for silent mode to work.

@@ -55,7 +55,7 @@ Yield result:
 
 You may noticed the result is not a valid JSON, there is one extra comma. "makes" actually will clean up any JSON file for writing to final project, this is specially designed to cater condition inside JSON file.
 
-Note, different from original [preprocess](https://github.com/jsoverson/preprocess), the `/* @if/@endif */` in "makes" will retain the leading and tailing white spaces (especially new line). This is designed for the skeleton authors to fine control the output.
+> Different from original [preprocess](https://github.com/jsoverson/preprocess), the `/* @if/@endif */` in "makes" will retain the leading and tailing white spaces (especially new line). This is designed for the skeleton authors to fine control the output.
 
 ## HTML syntax
 

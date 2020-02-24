@@ -59,7 +59,7 @@ module.exports = [
 
 ## No name needed
 
-Different from all popular prompts, [inquirer](https://github.com/SBoudrias/Inquirer.js), [enquirer](https://github.com/enquirer/enquirer), and [prompts](https://github.com/terkelg/prompts), our select prompt doesn't need `name`.
+> Different from all popular prompts, [inquirer](https://github.com/SBoudrias/Inquirer.js), [enquirer](https://github.com/enquirer/enquirer), and [prompts](https://github.com/terkelg/prompts), our select prompt doesn't need `name`.
 
 While other popular select prompt returns an object like:
 

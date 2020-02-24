@@ -35,7 +35,7 @@ You can define additional [feature folders](feature-folders) with name matching 
 
 Note makes-demo2 defined feature folders `nodejs` and `ruby`, but didn't define all folders for every possible features (`babel`, `typescript`, ...).
 
-**You don't have to define a feature folder for every feature**. There are additional way to conditionally include a file/folder, which we will elaborate in [conditional file and folder](conditional-file-and-folder).
+> **You don't have to define a feature folder for every feature**. There are additional way to conditionally include a file/folder, which we will elaborate in [conditional file and folder](conditional-file-and-folder).
 
 ## File objects stream
 

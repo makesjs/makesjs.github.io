@@ -69,7 +69,7 @@ common/a-file
 nodejs/a-file
 ```
 
-"makes" default behaviour is to honour the last one `nodejs/a-file`, so the order of `features` array is actually significant. You can deliberately offer a new file in some feature folder which overshadows previous feature folders (according to the order of `features` array, which is the order of skeleton questions and choices).
+> "makes" default behaviour is to honour the last one `nodejs/a-file`, so the order of `features` array is actually significant. You can deliberately offer a new file in some feature folder which overshadows previous feature folders (according to the order of `features` array, which is the order of skeleton questions and choices).
 
 However, for convenience, "makes" offers special behaviour on two types of files.
 
@@ -158,7 +158,7 @@ The above "append" transform imposed a runtime dependency on `through2`. To tell
 
 When "makes" loads up this skeleton, it sees non-empty `"dependencies"`, it then fires up `npm install --only=prod` to install all the dependencies before proceed.
 
-Note `"devDependencies"` is irrelevant. You can add many npm packages to `"devDependencies"` to help local testing or changelog, it would not slow "makes" down.
+> `"devDependencies"` is irrelevant. You can add many npm packages to `"devDependencies"` to help local testing or changelog, it would not slow "makes" down.
 
 ### Aim zero runtime dependency
 
@@ -215,7 +215,7 @@ exports.append = function(properties, features) {
 
 The benefit is `npx makes makesjs/demo2#adv` is faster than `npx makes makesjs/demo2#adv-through2` without the need to install runtime dependencies.
 
-Note "makes" itself uses [rollup.js](https://rollupjs.org) to ship npm package "makes" in a bundle without any additional runtime dependencies, that's part of the reason why `npx makes <skeleton_provider>` is so fast.
+> "makes" itself uses [rollup.js](https://rollupjs.org) to ship npm package "makes" in a bundle without any additional runtime dependencies, that's part of the reason why `npx makes <skeleton_provider>` is so fast.
 
 ## Prepend transforms
 

@@ -60,7 +60,7 @@ Note "makes" doesn't provide any boolean/checkbox prompt. To do a "yes/no" quest
 }
 ```
 
-Please don't use string like `"yes"`, `"no"`, `"true"`, `"false"` in choice values. Because "makes" select prompt's answer is not labelled, `"yes"` and `"no"` are not readable in `features` array.
+> Please don't use string like `"yes"`, `"no"`, `"true"`, `"false"` in choice values. Because "makes" select prompt's answer is not labelled, `"yes"` and `"no"` are not readable in `features` array.
 
 1. use missing value for 'No' branch. When end user selected 'No', it adds nothing to `features` array.
 2. use readable string like `'postcss'` in 'Yes' branch.
