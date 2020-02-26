@@ -1,5 +1,6 @@
 remote_theme: pmarsceill/just-the-docs
 url: //makes.js.org
+color_scheme: "dark"
 search_enabled: true
 title: makes
 aux_links:
