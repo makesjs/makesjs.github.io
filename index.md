@@ -24,7 +24,6 @@ npx makes <skeleton_provider>
 ```
 
 ![makes dumberjs]({{ site.baseurl }}/assets/makes-dumberjs.gif)
-{: .mx-lg-8 .mx-md-6 }
 
 ## Example skeletons
 
