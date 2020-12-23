@@ -135,7 +135,7 @@ For users who has experience with gulp, this is easy to understand.
 The `exports.append` can be one function or array of functions.
 
 Every function:
-* get four input arguments `properties`, `features`, `targetDir`, `unattended`.
+* get five input arguments `properties`, `features`, `targetDir`, `unattended`, and `prompts`.
   * `properties`, `features` are the result built from questions.
   * `targetDir` gives you a chance to inspect target folder, obviously only useful when end users ran "makes" in [here mode](here-mode-and-write-policy).
   * `unattended` is true when end users ran "makes" in [silient mode](silent-mode). Your transform implementation should skip any user interactivity when `unattended` is true.
