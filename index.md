@@ -27,6 +27,17 @@ npx makes <skeleton_provider>
 
 ## Example skeletons
 
+### [`aurelia/v1`](https://github.com/aurelia/v1)
+
+Skeletons for current [Aurelia](https://aurelia.io).
+
+```bash
+npx makes aurelia/v1
+```
+
+> Aurelia CLI internally uses the above command when user does `au new`.
+
+
 ### [`aurelia/new`](https://github.com/aurelia/new)
 
 Skeletons for upcoming [Aurelia 2](https://docs.aurelia.io). Currently in early-alpha stage.
