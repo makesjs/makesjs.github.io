@@ -112,8 +112,8 @@ const defaultNamePrompt = {
   name: 'name',
   message: 'Please name this new project:',
   default: 'my-app',
-  validate: value => value.match(/^[a-zA-Z1-9_-]+$/) ? null :
-    'Please only use letters, numbers, dash(-) and underscore(_).'
+  validate: value => value.match(/^[.a-zA-Z1-9_-]+$/) ? null :
+    'Please only use letters, numbers, dot(.), dash(-) and underscore(_).'
 };
 ```
 
