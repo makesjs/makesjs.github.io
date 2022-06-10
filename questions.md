@@ -36,12 +36,30 @@ This demo skeleton defined an optional file [`questions.js`](https://github.com/
 ```
 {: .lh-tight}
 
-The optional `questions.js` file needs to provide an array of questions. For simplicity, "makes" doesn't support ESM module format, nor Babel/TypeScript transpiling. It must be written in pain CommonJS format which Node.js can understand.
+The optional `questions.js` file needs to provide an array of questions. "makes" support CommonJS and ESM. For simplicity, "makes" doesn't support any Babel/TypeScript transpiling. It must be written in pain CommonJS/ESM format which Node.js can understand.
+
+To use CommonJS format, use file name `questions.js` or `questions.cjs` with following content:
 
 ```js
 module.exports = [
-  // ...
+  // list of questions...
 ];
 ```
+
+To use ESM format, use file name `questions.mjs` or `questions.js` with additional `package.json` with `"type": "module"` (so that Nodejs will treat any JS file in your skeleton with ESM format):
+
+`questions.mjs`
+```js
+export default [
+  // list of questions ...
+]
+```
+
+`package.json`, only needed if you use file name `questions.js` for ESM code.
+```json
+{ "type": "module" }
+```
+
+For more information, please review [CommonJS/ESM support](./commonjs-esm).
 
 "makes" supports only three types of questions: text prompt, select prompt, multi-select prompt. These prompts are based on [prompts](https://github.com/terkelg/prompts), but customised and simplified.
