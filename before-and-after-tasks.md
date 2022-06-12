@@ -32,6 +32,8 @@ For example you can follow up in a JavaScript project to install npm dependencie
 
 The [`dumberjs/new` `after.js`](https://github.com/dumberjs/new/blob/master/after.js) is a great example.
 
+> For more information, please review [CommonJS/ESM support](./commonjs-esm).
+
 ```js
 const {execSync} = require('child_process');
 

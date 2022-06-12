@@ -114,7 +114,11 @@ We will exam "append" transforms first because it's the more common than "prepen
 
 You can try this demo2 branch with `npx makes makesjs/demo2#adv-through2`.
 
-Create this optional `transform.js` file. Note just like `questions.js`, this file is in CommonJS format too.
+Create this optional `transform.js` file.
+
+Here is an example code in CommonJS format.
+
+> For more information, please review [CommonJS/ESM support](./commonjs-esm).
 
 ```js
 const through2 = require('through2');
