@@ -62,12 +62,16 @@ npx makes gitlab:username # same as: npx makes gitlab:username/new
 
 ## Use local skeleton folder
 
-For developer, or just for personal usage, you can use a local folder as the skeleton provider. You have to use a relative path (start with `./` or `../`) for "makes" to recognise you want a local folder.
+For developer, or just for personal usage, you can use a local folder as the skeleton provider. You have to use a relative path (start with `./` or `../`) or absolute path (start with `/` or `~/` or `C:\`).
 
 ```bash
 npx makes ./local/folder
 npx makes ../../local/folder
+npx makes ~/some/user/folder
+npx makes /home/user/folder
 ```
+
+> Note `~/` is expanded by shell into full path before sending to "makes". "makes" sees `/some/full/path` rather than `~/`.
 
 ## Define a skeleton
 
