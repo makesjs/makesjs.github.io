@@ -29,7 +29,7 @@ npx makes <skeleton_provider>
 
 ### [`aurelia/v1`](https://github.com/aurelia/v1)
 
-Skeletons for current [Aurelia](https://aurelia.io).
+Skeletons for [Aurelia](https://aurelia.io).
 
 ```bash
 npx makes aurelia/v1
@@ -40,7 +40,7 @@ npx makes aurelia/v1
 
 ### [`aurelia/new`](https://github.com/aurelia/new)
 
-Skeletons for upcoming [Aurelia 2](https://docs.aurelia.io). Currently in early-alpha stage.
+Skeletons for [Aurelia 2](https://docs.aurelia.io).
 
 ```bash
 npx makes aurelia
