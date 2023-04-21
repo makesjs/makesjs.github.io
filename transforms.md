@@ -219,7 +219,7 @@ exports.append = function(properties, features) {
 
 The benefit is `npx makes makesjs/demo2#adv` is faster than `npx makes makesjs/demo2#adv-through2` without the need to install runtime dependencies.
 
-> "makes" itself uses [rollup.js](https://rollupjs.org) to ship npm package "makes" in a bundle without any additional runtime dependencies, that's part of the reason why `npx makes <skeleton_provider>` is so fast.
+> "makes" itself uses [@vercel/ncc](https://github.com/vercel/ncc) to ship npm package "makes" in a bundle without any additional runtime dependencies, that's part of the reason why `npx makes <skeleton_provider>` is so fast.
 
 ## Prepend transforms
 
